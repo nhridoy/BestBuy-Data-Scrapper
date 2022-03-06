@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 
 browser = webdriver.Chrome()
 browser.get('https://www.bestbuy.com/?intl=nosplash')
+browser.implicitly_wait(10)
 
 
 def search(search_term, pages):
